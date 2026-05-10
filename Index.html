@@ -1,0 +1,1982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Milkfoods Pvt. Ltd. | India's Premier Dairy Manufacturer & Exporter</title>
+<meta name="description" content="Alpha Milkfoods — India's integrated dairy leader. 6,00,000 litres/day capacity, 15,000+ farmer network, exporting to 15+ countries. Institutional & retail dairy products under Farmer Fresh brand.">
+<meta property="og:title" content="Alpha Milkfoods Pvt. Ltd. | Farmer Fresh Dairy">
+<meta property="og:description" content="Farm to shelf dairy excellence. Trusted by industries across India and 15+ countries worldwide.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aadityaroy01.github.io/alphamilkdemo/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=1200&auto=format&fit=crop&q=85">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Farmer Fresh dairy products by Alpha Milkfoods Pvt. Ltd.">
+<meta property="og:site_name" content="Alpha Milkfoods Pvt. Ltd.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alpha Milkfoods Pvt. Ltd. | Farmer Fresh Dairy">
+<meta name="twitter:description" content="India's integrated dairy leader. 6,00,000 litres/day. 15,000+ farmers. Exporting to 15+ countries.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=1200&auto=format&fit=crop&q=85">
+<link rel="canonical" href="https://aadityaroy01.github.io/alphamilkdemo/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN TOKENS
+============================================================ */
+:root {
+  --navy:       #0D2B5E;
+  --navy-deep:  #071A3E;
+  --sky:        #3A9BD5;
+  --sky-light:  #EBF6FF;
+  --gold:       #F5C842;
+  --gold-deep:  #D4A017;
+  --white:      #FFFFFF;
+  --off-white:  #F8FBFF;
+  --mist:       #EEF4FA;
+  --text-dark:  #0D1B2A;
+  --text-mid:   #3A5068;
+  --text-light: #7A9BB5;
+  --green:      #2D8653;
+  --red:        #E53E3E;
+  --radius-sm:  6px;
+  --radius-md:  14px;
+  --radius-lg:  28px;
+  --radius-xl:  56px;
+  --shadow-sm:  0 2px 12px rgba(13,43,94,0.08);
+  --shadow-md:  0 8px 32px rgba(13,43,94,0.14);
+  --shadow-lg:  0 20px 60px rgba(13,43,94,0.18);
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* ============================================================
+RESET & BASE
+============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+font-family: var(–font-body);
+color: var(–text-dark);
+background: var(–white);
+overflow-x: hidden;
+line-height: 1.6;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ============================================================
+UTILITY
+============================================================ */
+.container { width: 92%; max-width: 1200px; margin: 0 auto; }
+.section-tag {
+display: inline-flex; align-items: center; gap: 8px;
+background: var(–sky-light); color: var(–sky);
+font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+text-transform: uppercase; padding: 6px 14px; border-radius: 100px;
+border: 1px solid rgba(58,155,213,0.25); margin-bottom: 16px;
+}
+.section-tag::before { content:’’; width:6px; height:6px; border-radius:50%; background:var(–sky); flex-shrink:0; }
+.section-title {
+font-family: var(–font-display); font-size: clamp(2rem, 4vw, 3rem);
+font-weight: 800; color: var(–navy); line-height: 1.15; margin-bottom: 16px;
+}
+.section-title span { color: var(–sky); }
+.section-subtitle {
+font-size: 1.05rem; color: var(–text-mid); max-width: 560px; line-height: 1.75;
+}
+.btn-primary {
+display: inline-flex; align-items: center; gap: 10px;
+background: var(–navy); color: var(–white);
+padding: 14px 28px; border-radius: var(–radius-md);
+font-size: 0.92rem; font-weight: 600; letter-spacing: 0.02em;
+transition: var(–transition); position: relative; overflow: hidden;
+}
+.btn-primary::after {
+content:’’; position:absolute; inset:0;
+background: linear-gradient(135deg,rgba(255,255,255,0.15),transparent);
+opacity:0; transition: var(–transition);
+}
+.btn-primary:hover { background: var(–navy-deep); transform: translateY(-2px); box-shadow: var(–shadow-md); }
+.btn-primary:hover::after { opacity:1; }
+.btn-secondary {
+display: inline-flex; align-items: center; gap: 10px;
+background: transparent; color: var(–navy);
+padding: 13px 27px; border-radius: var(–radius-md);
+font-size: 0.92rem; font-weight: 600;
+border: 2px solid var(–navy); transition: var(–transition);
+}
+.btn-secondary:hover { background: var(–navy); color: var(–white); transform: translateY(-2px); }
+.btn-gold {
+display: inline-flex; align-items: center; gap: 10px;
+background: var(–gold); color: var(–navy-deep);
+padding: 15px 32px; border-radius: var(–radius-md);
+font-size: 0.95rem; font-weight: 700; transition: var(–transition);
+box-shadow: 0 4px 20px rgba(245,200,66,0.35);
+}
+.btn-gold:hover { background: var(–gold-deep); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(245,200,66,0.45); }
+
+/* ============================================================
+SCROLL ANIMATIONS
+============================================================ */
+.reveal {
+opacity: 0; transform: translateY(36px);
+transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-left { opacity:0; transform:translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-left.visible { opacity:1; transform:translateX(0); }
+.reveal-right { opacity:0; transform:translateX(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-right.visible { opacity:1; transform:translateX(0); }
+.delay-1 { transition-delay: 0.1s !important; }
+.delay-2 { transition-delay: 0.2s !important; }
+.delay-3 { transition-delay: 0.3s !important; }
+.delay-4 { transition-delay: 0.4s !important; }
+.delay-5 { transition-delay: 0.5s !important; }
+
+/* ============================================================
+ANNOUNCEMENT BAR
+============================================================ */
+.announcement-bar {
+background: var(–navy-deep); color: var(–white);
+text-align: center; padding: 9px 16px;
+font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em;
+display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.announcement-bar span { color: var(–gold); font-weight: 700; }
+
+/* ============================================================
+NAVBAR
+============================================================ */
+.navbar {
+position: sticky; top: 0; z-index: 1000;
+background: rgba(255,255,255,0.95);
+backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+border-bottom: 1px solid rgba(13,43,94,0.08);
+transition: box-shadow 0.3s;
+}
+.navbar.scrolled { box-shadow: var(–shadow-md); }
+.nav-inner {
+display: flex; align-items: center; justify-content: space-between;
+padding: 14px 0; gap: 24px;
+}
+.nav-logo { display: flex; flex-direction: column; line-height: 1; }
+.nav-logo-main {
+font-family: var(–font-display); font-size: 1.45rem; font-weight: 900;
+color: var(–navy); letter-spacing: -0.01em;
+}
+.nav-logo-main span { color: var(–sky); }
+.nav-logo-sub {
+font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em;
+text-transform: uppercase; color: var(–text-light);
+}
+.nav-links {
+display: flex; align-items: center; gap: 2px;
+}
+.nav-links a {
+font-size: 0.85rem; font-weight: 600; color: var(–text-mid);
+padding: 8px 14px; border-radius: var(–radius-sm);
+transition: var(–transition); white-space: nowrap;
+}
+.nav-links a:hover { color: var(–navy); background: var(–sky-light); }
+.nav-cta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.nav-phone {
+display: flex; align-items: center; gap: 7px;
+font-size: 0.82rem; font-weight: 700; color: var(–navy); white-space: nowrap;
+}
+.nav-phone svg { flex-shrink: 0; }
+.hamburger {
+display: none; flex-direction: column; gap: 5px; padding: 6px;
+cursor: pointer; z-index: 1100;
+}
+.hamburger span {
+display: block; width: 24px; height: 2px; background: var(–navy);
+border-radius: 2px; transition: var(–transition);
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mobile-menu {
+display: none; flex-direction: column; gap: 4px;
+padding: 16px 0 20px;
+border-top: 1px solid var(–mist);
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+font-size: 0.95rem; font-weight: 600; color: var(–text-dark);
+padding: 12px 16px; border-radius: var(–radius-sm);
+transition: background 0.2s;
+}
+.mobile-menu a:hover { background: var(–sky-light); color: var(–navy); }
+.mobile-menu .btn-primary { margin: 8px 16px 0; text-align: center; justify-content: center; }
+
+/* ============================================================
+HERO
+============================================================ */
+.hero {
+position: relative; overflow: hidden;
+background: linear-gradient(135deg, var(–navy-deep) 0%, var(–navy) 50%, #1a4a8a 100%);
+min-height: 92vh; display: flex; align-items: center;
+}
+.hero-bg-pattern {
+position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+}
+.hero-bg-pattern::before {
+content: ‘’;
+position: absolute; top: -20%; right: -10%;
+width: 70vw; height: 70vw; max-width: 800px; max-height: 800px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(58,155,213,0.18) 0%, transparent 70%);
+}
+.hero-bg-pattern::after {
+content: ‘’;
+position: absolute; bottom: -15%; left: -5%;
+width: 50vw; height: 50vw; max-width: 600px; max-height: 600px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(245,200,66,0.08) 0%, transparent 70%);
+}
+/* Animated milk drops */
+.hero-orb {
+position: absolute; border-radius: 50%;
+background: rgba(255,255,255,0.04); pointer-events: none;
+animation: floatOrb 8s ease-in-out infinite;
+}
+.hero-orb:nth-child(1) { width:180px; height:180px; top:10%; left:5%; animation-delay:0s; }
+.hero-orb:nth-child(2) { width:80px; height:80px; top:60%; left:15%; animation-delay:2s; }
+.hero-orb:nth-child(3) { width:120px; height:120px; top:20%; right:25%; animation-delay:4s; }
+@keyframes floatOrb {
+0%,100% { transform: translateY(0px) scale(1); }
+50% { transform: translateY(-20px) scale(1.05); }
+}
+.hero-inner {
+position: relative; z-index: 2;
+display: grid; grid-template-columns: 1fr 1fr;
+align-items: center; gap: 60px;
+padding: 80px 0;
+}
+.hero-content { color: var(–white); }
+.hero-badge {
+display: inline-flex; align-items: center; gap: 8px;
+background: rgba(245,200,66,0.15); border: 1px solid rgba(245,200,66,0.4);
+color: var(–gold); font-size: 0.72rem; font-weight: 700;
+letter-spacing: 0.12em; text-transform: uppercase;
+padding: 7px 16px; border-radius: 100px; margin-bottom: 24px;
+}
+.hero-badge::before { content:‘★’; }
+.hero-h1 {
+font-family: var(–font-display);
+font-size: clamp(2.4rem, 5vw, 3.8rem);
+font-weight: 900; line-height: 1.1; margin-bottom: 20px;
+color: var(–white);
+}
+.hero-h1 .line-sky { color: var(–sky); display: block; }
+.hero-h1 .line-gold { color: var(–gold); display: block; }
+.hero-subtitle {
+font-size: 1.05rem; color: rgba(255,255,255,0.72);
+line-height: 1.75; max-width: 480px; margin-bottom: 36px;
+}
+.hero-ctas { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+.hero-stats-row {
+display: flex; gap: 32px; flex-wrap: wrap;
+padding-top: 36px; border-top: 1px solid rgba(255,255,255,0.12);
+}
+.hero-stat { display: flex; flex-direction: column; }
+.hero-stat-num {
+font-family: var(–font-display); font-size: 1.8rem; font-weight: 900;
+color: var(–gold); line-height: 1;
+}
+.hero-stat-label {
+font-size: 0.72rem; font-weight: 600; color: rgba(255,255,255,0.55);
+text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px;
+}
+.hero-visual {
+position: relative; display: flex; align-items: center; justify-content: center;
+}
+.hero-image-frame {
+position: relative; width: 100%; max-width: 520px;
+background: rgba(255,255,255,0.06);
+border: 1px solid rgba(255,255,255,0.12);
+border-radius: var(–radius-lg); overflow: hidden;
+backdrop-filter: blur(10px);
+box-shadow: 0 40px 100px rgba(0,0,0,0.3);
+animation: heroFloat 6s ease-in-out infinite;
+}
+@keyframes heroFloat {
+0%,100% { transform: translateY(0px); }
+50% { transform: translateY(-12px); }
+}
+.hero-image-frame img {
+width: 100%; height: auto;
+object-fit: cover;
+}
+.hero-image-badge {
+position: absolute; bottom: 20px; left: 20px; right: 20px;
+background: rgba(13,27,62,0.88);
+backdrop-filter: blur(16px);
+border: 1px solid rgba(255,255,255,0.12);
+border-radius: var(–radius-md); padding: 14px 18px;
+display: flex; align-items: center; gap: 14px;
+}
+.hero-image-badge-icon {
+width: 40px; height: 40px; border-radius: 50%;
+background: var(–gold); display: flex; align-items: center; justify-content: center;
+flex-shrink: 0; font-size: 1.1rem;
+}
+.hero-image-badge-text { color: var(–white); }
+.hero-image-badge-text strong { display: block; font-size: 0.85rem; font-weight: 700; }
+.hero-image-badge-text span { font-size: 0.72rem; color: rgba(255,255,255,0.6); }
+.hero-float-tag {
+position: absolute; top: 24px; right: -16px;
+background: var(–gold); color: var(–navy-deep);
+font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em;
+text-transform: uppercase; padding: 8px 16px;
+border-radius: 100px;
+box-shadow: 0 4px 16px rgba(245,200,66,0.4);
+animation: heroFloat 4s ease-in-out infinite 1s;
+}
+
+/* ============================================================
+TRUST BAR
+============================================================ */
+.trust-bar {
+background: var(–white); padding: 20px 0;
+border-bottom: 1px solid var(–mist);
+overflow: hidden;
+}
+.trust-bar-inner {
+display: flex; align-items: center; gap: 0;
+animation: scrollTrust 30s linear infinite;
+white-space: nowrap;
+}
+.trust-bar-inner:hover { animation-play-state: paused; }
+.trust-item {
+display: inline-flex; align-items: center; gap: 10px;
+font-size: 0.82rem; font-weight: 700; color: var(–text-mid);
+text-transform: uppercase; letter-spacing: 0.08em; padding: 0 32px;
+border-right: 1px solid var(–mist); flex-shrink: 0;
+}
+.trust-item svg { color: var(–sky); flex-shrink: 0; }
+@keyframes scrollTrust {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+
+/* ============================================================
+STATS SECTION
+============================================================ */
+.stats-section {
+background: linear-gradient(135deg, var(–navy) 0%, var(–navy-deep) 100%);
+padding: 80px 0; position: relative; overflow: hidden;
+}
+.stats-section::before {
+content: ‘’; position: absolute; top: 0; left: 0; right: 0;
+height: 3px;
+background: linear-gradient(90deg, var(–gold), var(–sky), var(–gold));
+}
+.stats-grid {
+display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px;
+text-align: center;
+}
+.stat-card {
+display: flex; flex-direction: column; align-items: center;
+padding: 32px 16px;
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(255,255,255,0.08);
+border-radius: var(–radius-md);
+transition: var(–transition);
+}
+.stat-card:hover {
+background: rgba(255,255,255,0.09);
+border-color: rgba(245,200,66,0.3);
+transform: translateY(-4px);
+}
+.stat-icon {
+width: 52px; height: 52px; border-radius: 50%;
+background: rgba(245,200,66,0.15); border: 1px solid rgba(245,200,66,0.3);
+display: flex; align-items: center; justify-content: center;
+margin-bottom: 16px; font-size: 1.4rem;
+}
+.stat-num {
+font-family: var(–font-display); font-size: 2.4rem; font-weight: 900;
+color: var(–gold); line-height: 1; margin-bottom: 8px;
+}
+.stat-num .counter { display: inline; }
+.stat-label {
+font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.6);
+text-transform: uppercase; letter-spacing: 0.08em; text-align: center;
+}
+
+/* ============================================================
+ABOUT / BRAND STORY
+============================================================ */
+.about-section { padding: 100px 0; background: var(–off-white); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.about-visual { position: relative; }
+.about-img-wrap {
+position: relative; border-radius: var(–radius-lg); overflow: hidden;
+box-shadow: var(–shadow-lg);
+}
+.about-img-wrap img { width: 100%; height: 480px; object-fit: cover; }
+.about-img-overlay {
+position: absolute; inset: 0;
+background: linear-gradient(to top, rgba(13,43,94,0.5) 0%, transparent 60%);
+}
+.about-cert-badge {
+position: absolute; top: 24px; left: 24px;
+background: var(–white); border-radius: var(–radius-md);
+padding: 14px 18px; box-shadow: var(–shadow-md);
+display: flex; align-items: center; gap: 12px;
+}
+.about-cert-badge-icon {
+width: 36px; height: 36px; border-radius: 50%;
+background: var(–green); display: flex; align-items: center;
+justify-content: center; color: white; font-size: 1rem; flex-shrink: 0;
+}
+.about-cert-badge-text strong { display: block; font-size: 0.82rem; font-weight: 700; color: var(–navy); }
+.about-cert-badge-text span { font-size: 0.7rem; color: var(–text-light); }
+.about-float-card {
+position: absolute; bottom: -24px; right: -24px;
+background: var(–white); border-radius: var(–radius-md);
+padding: 20px 24px; box-shadow: var(–shadow-lg);
+min-width: 200px;
+}
+.about-float-card .big-num {
+font-family: var(–font-display); font-size: 2.2rem; font-weight: 900;
+color: var(–navy); line-height: 1;
+}
+.about-float-card .big-num span { color: var(–sky); }
+.about-float-card p { font-size: 0.78rem; color: var(–text-mid); margin-top: 4px; font-weight: 500; }
+.about-content { }
+.about-features { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+.about-feature {
+display: flex; gap: 16px; align-items: flex-start;
+padding: 16px 20px; background: var(–white); border-radius: var(–radius-md);
+border: 1px solid rgba(13,43,94,0.06); transition: var(–transition);
+}
+.about-feature:hover { box-shadow: var(–shadow-sm); border-color: rgba(58,155,213,0.2); }
+.about-feature-icon {
+width: 40px; height: 40px; border-radius: var(–radius-sm);
+background: var(–sky-light); display: flex; align-items: center;
+justify-content: center; flex-shrink: 0; font-size: 1.1rem;
+}
+.about-feature-text strong { display: block; font-size: 0.88rem; font-weight: 700; color: var(–navy); margin-bottom: 2px; }
+.about-feature-text p { font-size: 0.8rem; color: var(–text-mid); line-height: 1.55; }
+
+/* ============================================================
+PRODUCTS SECTION
+============================================================ */
+.products-section { padding: 100px 0; background: var(–white); }
+.products-header { text-align: center; margin-bottom: 60px; }
+.products-header .section-subtitle { margin: 0 auto; }
+.product-tabs {
+display: flex; gap: 8px; justify-content: center;
+flex-wrap: wrap; margin-bottom: 48px;
+}
+.product-tab {
+padding: 10px 22px; border-radius: 100px;
+font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em;
+border: 2px solid var(–mist); color: var(–text-mid);
+background: var(–white); cursor: pointer; transition: var(–transition);
+}
+.product-tab.active, .product-tab:hover {
+background: var(–navy); color: var(–white); border-color: var(–navy);
+}
+.products-grid {
+display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+}
+.product-card {
+background: var(–off-white); border-radius: var(–radius-lg);
+overflow: hidden; border: 1px solid rgba(13,43,94,0.06);
+transition: var(–transition); position: relative;
+display: flex; flex-direction: column;
+}
+.product-card:hover { box-shadow: var(–shadow-md); transform: translateY(-6px); }
+.product-card-img {
+position: relative; height: 200px; overflow: hidden;
+}
+.product-card-img img {
+width: 100%; height: 100%; object-fit: cover;
+transition: transform 0.6s ease;
+}
+.product-card:hover .product-card-img img { transform: scale(1.06); }
+.product-card-tag {
+position: absolute; top: 12px; left: 12px;
+background: var(–navy); color: var(–white);
+font-size: 0.68rem; font-weight: 700; padding: 4px 12px;
+border-radius: 100px; text-transform: uppercase; letter-spacing: 0.08em;
+}
+.product-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+.product-card-title {
+font-family: var(–font-display); font-size: 1.2rem; font-weight: 700;
+color: var(–navy); margin-bottom: 8px;
+}
+.product-card-desc { font-size: 0.83rem; color: var(–text-mid); line-height: 1.65; flex: 1; }
+.product-card-footer {
+display: flex; align-items: center; justify-content: space-between;
+margin-top: 20px; padding-top: 16px;
+border-top: 1px solid rgba(13,43,94,0.06);
+}
+.product-card-features {
+display: flex; gap: 8px; flex-wrap: wrap;
+}
+.product-tag {
+font-size: 0.68rem; font-weight: 600; background: var(–sky-light);
+color: var(–sky); padding: 3px 10px; border-radius: 100px;
+}
+.product-enquire {
+display: flex; align-items: center; gap: 6px;
+font-size: 0.8rem; font-weight: 700; color: var(–navy);
+transition: gap 0.3s;
+}
+.product-enquire:hover { gap: 10px; color: var(–sky); }
+
+/* ============================================================
+FARMER FRESH BRAND SPOTLIGHT
+============================================================ */
+.brand-section {
+padding: 100px 0;
+background: linear-gradient(135deg, #e8f4fc 0%, #f0f9ff 50%, #e8f4fc 100%);
+position: relative; overflow: hidden;
+}
+.brand-section::before {
+content: ‘FARMER FRESH’;
+position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+font-family: var(–font-display); font-size: 14vw; font-weight: 900;
+color: rgba(58,155,213,0.05); white-space: nowrap; pointer-events: none;
+letter-spacing: -0.03em;
+}
+.brand-inner {
+display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+position: relative; z-index: 1;
+}
+.brand-content {}
+.brand-tagline {
+font-family: var(–font-display); font-size: clamp(1.8rem, 4vw, 2.8rem);
+font-weight: 900; color: var(–navy); line-height: 1.15; margin-bottom: 20px;
+}
+.brand-tagline em { font-style: italic; color: var(–sky); }
+.brand-desc { font-size: 1rem; color: var(–text-mid); line-height: 1.8; margin-bottom: 32px; }
+.brand-product-pills {
+display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px;
+}
+.brand-pill {
+display: flex; align-items: center; gap: 7px;
+background: var(–white); border: 1px solid rgba(13,43,94,0.1);
+border-radius: 100px; padding: 8px 16px; font-size: 0.8rem; font-weight: 600;
+color: var(–navy); transition: var(–transition);
+}
+.brand-pill:hover { background: var(–navy); color: var(–white); border-color: var(–navy); }
+.brand-pill-dot { width: 7px; height: 7px; border-radius: 50%; background: var(–sky); flex-shrink: 0; }
+.brand-visual { position: relative; display: flex; justify-content: center; }
+.brand-img-container {
+position: relative; width: 100%; max-width: 480px;
+}
+.brand-img-main {
+border-radius: var(–radius-lg); overflow: hidden;
+box-shadow: var(–shadow-lg);
+}
+.brand-img-main img { width: 100%; height: auto; display: block; }
+.brand-promo-card {
+position: absolute; bottom: -20px; left: -20px;
+background: var(–navy); color: var(–white);
+border-radius: var(–radius-md); padding: 18px 22px;
+box-shadow: var(–shadow-md); max-width: 200px;
+}
+.brand-promo-card .icon { font-size: 1.6rem; margin-bottom: 8px; }
+.brand-promo-card strong { display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+.brand-promo-card span { font-size: 0.75rem; color: rgba(255,255,255,0.6); line-height: 1.4; }
+
+/* ============================================================
+INDUSTRIES SECTION
+============================================================ */
+.industries-section { padding: 100px 0; background: var(–white); }
+.industries-header { margin-bottom: 56px; }
+.industries-grid {
+display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.industry-card {
+position: relative; overflow: hidden; border-radius: var(–radius-md);
+aspect-ratio: 3/4; cursor: default;
+transition: var(–transition);
+}
+.industry-card:hover { transform: translateY(-6px); box-shadow: var(–shadow-md); }
+.industry-card img {
+width: 100%; height: 100%; object-fit: cover;
+transition: transform 0.6s ease;
+}
+.industry-card:hover img { transform: scale(1.08); }
+.industry-overlay {
+position: absolute; inset: 0;
+background: linear-gradient(to top, rgba(7,26,62,0.88) 0%, rgba(7,26,62,0.2) 60%, transparent 100%);
+}
+.industry-content {
+position: absolute; bottom: 0; left: 0; right: 0; padding: 20px;
+}
+.industry-icon { font-size: 1.8rem; margin-bottom: 8px; }
+.industry-name {
+font-family: var(–font-display); font-size: 1.1rem; font-weight: 700;
+color: var(–white); margin-bottom: 4px;
+}
+.industry-desc { font-size: 0.75rem; color: rgba(255,255,255,0.65); line-height: 1.5; }
+
+/* ============================================================
+PROCESS SECTION
+============================================================ */
+.process-section {
+padding: 100px 0;
+background: linear-gradient(180deg, var(–sky-light) 0%, var(–off-white) 100%);
+}
+.process-header { text-align: center; margin-bottom: 64px; }
+.process-header .section-subtitle { margin: 0 auto; }
+.process-timeline {
+display: flex; align-items: flex-start; gap: 0;
+position: relative;
+}
+.process-timeline::before {
+content: ‘’; position: absolute; top: 48px; left: 48px; right: 48px; height: 2px;
+background: linear-gradient(90deg, var(–sky), var(–navy), var(–sky));
+z-index: 0;
+}
+.process-step {
+flex: 1; display: flex; flex-direction: column; align-items: center;
+text-align: center; position: relative; z-index: 1; padding: 0 8px;
+}
+.process-step-num {
+width: 96px; height: 96px; border-radius: 50%;
+background: var(–white); border: 3px solid var(–sky);
+display: flex; align-items: center; justify-content: center;
+font-size: 2rem; margin-bottom: 20px;
+box-shadow: 0 4px 20px rgba(58,155,213,0.2);
+transition: var(–transition);
+}
+.process-step:hover .process-step-num {
+background: var(–navy); border-color: var(–navy);
+transform: scale(1.08);
+box-shadow: 0 8px 30px rgba(13,43,94,0.25);
+}
+.process-step-title {
+font-family: var(–font-display); font-size: 1rem; font-weight: 700;
+color: var(–navy); margin-bottom: 8px;
+}
+.process-step-desc { font-size: 0.78rem; color: var(–text-mid); line-height: 1.6; max-width: 140px; }
+
+/* ============================================================
+CERTIFICATIONS
+============================================================ */
+.certs-section { padding: 100px 0; background: var(–off-white); }
+.certs-inner {
+display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+}
+.certs-content { }
+.certs-grid {
+display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 36px;
+}
+.cert-card {
+background: var(–white); border-radius: var(–radius-md);
+padding: 20px; text-align: center; border: 1px solid rgba(13,43,94,0.06);
+transition: var(–transition);
+}
+.cert-card:hover { border-color: var(–sky); box-shadow: var(–shadow-sm); transform: translateY(-3px); }
+.cert-icon { font-size: 2rem; margin-bottom: 10px; }
+.cert-name { font-size: 0.8rem; font-weight: 800; color: var(–navy); margin-bottom: 4px; }
+.cert-desc { font-size: 0.7rem; color: var(–text-light); line-height: 1.4; }
+.certs-visual { position: relative; }
+.certs-img-wrap {
+border-radius: var(–radius-lg); overflow: hidden; box-shadow: var(–shadow-lg);
+}
+.certs-img-wrap img { width: 100%; height: 420px; object-fit: cover; }
+.certs-quality-badge {
+position: absolute; bottom: -20px; right: -20px;
+background: var(–green); color: var(–white);
+border-radius: var(–radius-md); padding: 20px 24px;
+box-shadow: var(–shadow-md);
+}
+.certs-quality-badge .big { font-family: var(–font-display); font-size: 2rem; font-weight: 900; }
+.certs-quality-badge p { font-size: 0.75rem; opacity: 0.85; margin-top: 2px; }
+
+/* ============================================================
+GLOBAL REACH
+============================================================ */
+.reach-section {
+padding: 100px 0;
+background: linear-gradient(135deg, var(–navy-deep) 0%, var(–navy) 100%);
+position: relative; overflow: hidden;
+}
+.reach-section::after {
+content: ‘’; position: absolute; inset: 0;
+background: url(“data:image/svg+xml,%3Csvg width=‘60’ height=‘60’ viewBox=‘0 0 60 60’ xmlns=‘http://www.w3.org/2000/svg’%3E%3Cg fill=‘none’ fill-rule=‘evenodd’%3E%3Cg fill=’%23ffffff’ fill-opacity=‘0.03’%3E%3Cpath d=‘M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z’/%3E%3C/g%3E%3C/g%3E%3C/svg%3E”);
+pointer-events: none;
+}
+.reach-inner {
+display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+position: relative; z-index: 1;
+}
+.reach-content { color: var(–white); }
+.reach-content .section-tag { background: rgba(245,200,66,0.15); color: var(–gold); border-color: rgba(245,200,66,0.3); }
+.reach-content .section-tag::before { background: var(–gold); }
+.reach-content .section-title { color: var(–white); }
+.reach-content .section-subtitle { color: rgba(255,255,255,0.65); }
+.reach-countries {
+display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 36px;
+}
+.country-pill {
+display: flex; align-items: center; gap: 8px;
+background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
+border-radius: var(–radius-sm); padding: 10px 14px;
+font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.85);
+transition: var(–transition);
+}
+.country-pill:hover { background: rgba(255,255,255,0.12); border-color: rgba(245,200,66,0.3); color: var(–gold); }
+.country-flag { font-size: 1.1rem; }
+.reach-map-visual {
+display: flex; justify-content: center; align-items: center;
+}
+.reach-globe {
+width: 320px; height: 320px; border-radius: 50%;
+background: radial-gradient(circle at 35% 35%, rgba(58,155,213,0.5), rgba(13,43,94,0.8));
+border: 2px solid rgba(255,255,255,0.12);
+display: flex; align-items: center; justify-content: center;
+font-size: 8rem; position: relative;
+box-shadow: 0 0 80px rgba(58,155,213,0.3), inset 0 0 60px rgba(0,0,0,0.3);
+animation: spinGlobe 20s linear infinite;
+}
+@keyframes spinGlobe {
+0%,100% { box-shadow: 0 0 80px rgba(58,155,213,0.3), inset 0 0 60px rgba(0,0,0,0.3); }
+50% { box-shadow: 0 0 120px rgba(58,155,213,0.5), inset 0 0 60px rgba(0,0,0,0.3); }
+}
+.reach-globe-dot {
+position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(–gold);
+box-shadow: 0 0 10px var(–gold);
+animation: pulseDot 2s ease-in-out infinite;
+}
+.reach-globe-dot:nth-child(2) { top: 20%; left: 30%; animation-delay: 0s; }
+.reach-globe-dot:nth-child(3) { top: 40%; right: 25%; animation-delay: 0.5s; }
+.reach-globe-dot:nth-child(4) { bottom: 30%; left: 40%; animation-delay: 1s; }
+.reach-globe-dot:nth-child(5) { top: 60%; left: 20%; animation-delay: 1.5s; }
+@keyframes pulseDot {
+0%,100% { transform: scale(1); opacity: 1; }
+50% { transform: scale(1.8); opacity: 0.6; }
+}
+
+/* ============================================================
+ENQUIRY / CONTACT
+============================================================ */
+.contact-section { padding: 100px 0; background: var(–white); }
+.contact-inner {
+display: grid; grid-template-columns: 5fr 7fr; gap: 60px; align-items: start;
+}
+.contact-info { }
+.contact-info-items { display: flex; flex-direction: column; gap: 20px; margin-top: 36px; }
+.contact-info-item {
+display: flex; gap: 16px; align-items: flex-start;
+padding: 20px; background: var(–off-white); border-radius: var(–radius-md);
+border: 1px solid rgba(13,43,94,0.05);
+}
+.contact-info-icon {
+width: 44px; height: 44px; border-radius: var(–radius-sm);
+background: var(–sky-light); display: flex; align-items: center;
+justify-content: center; flex-shrink: 0; font-size: 1.1rem;
+}
+.contact-info-text strong { display: block; font-size: 0.8rem; font-weight: 700; color: var(–navy); margin-bottom: 3px; }
+.contact-info-text a, .contact-info-text p { font-size: 0.83rem; color: var(–text-mid); }
+.contact-info-text a:hover { color: var(–sky); }
+.contact-form-wrap {
+background: var(–off-white); border-radius: var(–radius-lg);
+padding: 40px; border: 1px solid rgba(13,43,94,0.06);
+box-shadow: var(–shadow-sm);
+}
+.form-title {
+font-family: var(–font-display); font-size: 1.6rem; font-weight: 800;
+color: var(–navy); margin-bottom: 8px;
+}
+.form-subtitle { font-size: 0.85rem; color: var(–text-mid); margin-bottom: 28px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group.full { grid-column: 1 / -1; }
+.form-group label {
+font-size: 0.78rem; font-weight: 700; color: var(–navy);
+text-transform: uppercase; letter-spacing: 0.06em;
+}
+.form-group input, .form-group select, .form-group textarea {
+padding: 12px 16px; border-radius: var(–radius-sm);
+border: 1.5px solid rgba(13,43,94,0.12); background: var(–white);
+font-family: var(–font-body); font-size: 0.88rem; color: var(–text-dark);
+transition: var(–transition); outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+border-color: var(–sky); box-shadow: 0 0 0 3px rgba(58,155,213,0.12);
+}
+.form-group input.error, .form-group select.error, .form-group textarea.error {
+border-color: var(–red);
+}
+.form-error-msg {
+font-size: 0.72rem; color: var(–red); font-weight: 600;
+display: none;
+}
+.form-error-msg.visible { display: block; }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-submit-wrap { grid-column: 1 / -1; margin-top: 8px; }
+.form-submit-btn {
+width: 100%; padding: 15px; border-radius: var(–radius-md);
+background: var(–navy); color: var(–white);
+font-size: 0.95rem; font-weight: 700; letter-spacing: 0.04em;
+cursor: pointer; border: none; font-family: var(–font-body);
+transition: var(–transition); position: relative; overflow: hidden;
+}
+.form-submit-btn:hover { background: var(–navy-deep); transform: translateY(-2px); box-shadow: var(–shadow-md); }
+.form-submit-btn:disabled { background: var(–text-light); cursor: not-allowed; transform: none; }
+.form-success {
+display: none; text-align: center; padding: 32px;
+background: rgba(45,134,83,0.08); border: 1px solid rgba(45,134,83,0.2);
+border-radius: var(–radius-md); margin-top: 16px;
+}
+.form-success.visible { display: block; }
+.form-success h3 { font-family: var(–font-display); font-size: 1.2rem; color: var(–green); margin-bottom: 8px; }
+.form-success p { font-size: 0.85rem; color: var(–text-mid); }
+
+/* ============================================================
+FOOTER
+============================================================ */
+.footer {
+background: var(–navy-deep); color: var(–white); padding: 72px 0 32px;
+}
+.footer-top {
+display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px;
+border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-brand {}
+.footer-logo {
+font-family: var(–font-display); font-size: 1.6rem; font-weight: 900; margin-bottom: 8px;
+}
+.footer-logo span { color: var(–sky); }
+.footer-tagline { font-size: 0.78rem; color: rgba(255,255,255,0.5); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 16px; }
+.footer-brand-desc { font-size: 0.83rem; color: rgba(255,255,255,0.55); line-height: 1.75; margin-bottom: 24px; }
+.footer-socials { display: flex; gap: 10px; }
+.footer-social {
+width: 38px; height: 38px; border-radius: var(–radius-sm);
+background: rgba(255,255,255,0.07); display: flex; align-items: center;
+justify-content: center; font-size: 1rem; transition: var(–transition);
+color: rgba(255,255,255,0.7);
+}
+.footer-social:hover { background: var(–sky); color: var(–white); }
+.footer-col h4 {
+font-size: 0.78rem; font-weight: 800; text-transform: uppercase;
+letter-spacing: 0.12em; color: rgba(255,255,255,0.4); margin-bottom: 20px;
+}
+.footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+.footer-col a {
+font-size: 0.83rem; color: rgba(255,255,255,0.6); transition: color 0.2s;
+}
+.footer-col a:hover { color: var(–gold); }
+.footer-bottom {
+display: flex; justify-content: space-between; align-items: center;
+padding-top: 28px; flex-wrap: wrap; gap: 12px;
+}
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+.footer-copy span { color: rgba(255,255,255,0.55); }
+.footer-legal { display: flex; gap: 20px; }
+.footer-legal a { font-size: 0.78rem; color: rgba(255,255,255,0.35); transition: color 0.2s; }
+.footer-legal a:hover { color: rgba(255,255,255,0.7); }
+
+/* ============================================================
+WHATSAPP FAB
+============================================================ */
+.wa-fab {
+position: fixed; bottom: 28px; right: 28px; z-index: 900;
+width: 56px; height: 56px; border-radius: 50%;
+background: #25D366; color: var(–white);
+display: flex; align-items: center; justify-content: center;
+font-size: 1.5rem; box-shadow: 0 4px 24px rgba(37,211,102,0.45);
+transition: var(–transition); text-decoration: none;
+animation: waPulse 3s ease-in-out infinite;
+}
+.wa-fab:hover { transform: scale(1.1); background: #1dba57; }
+@keyframes waPulse {
+0%,100% { box-shadow: 0 4px 24px rgba(37,211,102,0.45); }
+50% { box-shadow: 0 4px 40px rgba(37,211,102,0.7); }
+}
+.wa-fab-tooltip {
+position: absolute; right: 68px; background: var(–navy-deep);
+color: var(–white); font-size: 0.75rem; font-weight: 600;
+white-space: nowrap; padding: 7px 14px; border-radius: var(–radius-sm);
+opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.wa-fab:hover .wa-fab-tooltip { opacity: 1; }
+
+/* ============================================================
+SCROLL TO TOP
+============================================================ */
+.scroll-top {
+position: fixed; bottom: 94px; right: 28px; z-index: 900;
+width: 44px; height: 44px; border-radius: 50%;
+background: var(–white); border: 2px solid var(–mist);
+display: flex; align-items: center; justify-content: center;
+box-shadow: var(–shadow-sm); cursor: pointer; transition: var(–transition);
+opacity: 0; pointer-events: none;
+}
+.scroll-top.visible { opacity: 1; pointer-events: auto; }
+.scroll-top:hover { background: var(–navy); border-color: var(–navy); color: white; }
+.scroll-top svg { transition: var(–transition); }
+.scroll-top:hover svg { stroke: white; }
+
+/* ============================================================
+RESPONSIVE
+============================================================ */
+@media (max-width: 1024px) {
+.hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 0; }
+.hero-visual { display: none; }
+.hero-h1 { font-size: clamp(2.2rem, 5vw, 3rem); }
+.stats-grid { grid-template-columns: repeat(3, 1fr); }
+.about-grid { grid-template-columns: 1fr; gap: 48px; }
+.about-float-card { right: 0; }
+.products-grid { grid-template-columns: repeat(2, 1fr); }
+.brand-inner { grid-template-columns: 1fr; gap: 48px; }
+.brand-visual { order: -1; }
+.industries-grid { grid-template-columns: repeat(2, 1fr); }
+.certs-inner { grid-template-columns: 1fr; gap: 48px; }
+.certs-visual { display: none; }
+.reach-inner { grid-template-columns: 1fr; gap: 48px; }
+.reach-map-visual { display: none; }
+.contact-inner { grid-template-columns: 1fr; gap: 48px; }
+.footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+@media (max-width: 768px) {
+.nav-links, .nav-cta { display: none; }
+.hamburger { display: flex; }
+.hero-inner { padding: 40px 0; }
+.stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.products-grid { grid-template-columns: 1fr; }
+.industries-grid { grid-template-columns: repeat(2, 1fr); }
+.process-timeline { flex-direction: column; gap: 32px; align-items: center; }
+.process-timeline::before { display: none; }
+.certs-grid { grid-template-columns: repeat(2, 1fr); }
+.reach-countries { grid-template-columns: repeat(2, 1fr); }
+.form-grid { grid-template-columns: 1fr; }
+.form-group.full { grid-column: 1; }
+.footer-top { grid-template-columns: 1fr; }
+.footer-bottom { flex-direction: column; text-align: center; }
+.contact-form-wrap { padding: 24px; }
+}
+@media (max-width: 480px) {
+.stats-grid { grid-template-columns: 1fr 1fr; }
+.industries-grid { grid-template-columns: 1fr; }
+.hero-stats-row { gap: 20px; }
+.hero-ctas { flex-direction: column; }
+.trust-item { padding: 0 20px; }
+.hero-badge { font-size: 0.65rem; }
+}
+
+/* ============================================================
+LOADING SCREEN
+============================================================ */
+.loader {
+position: fixed; inset: 0; z-index: 9999;
+background: var(–navy-deep); display: flex;
+align-items: center; justify-content: center; flex-direction: column;
+gap: 20px; transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+.loader.hide { opacity: 0; visibility: hidden; }
+.loader-logo {
+font-family: var(–font-display); font-size: 2.2rem; font-weight: 900;
+color: var(–white);
+}
+.loader-logo span { color: var(–sky); }
+.loader-bar {
+width: 200px; height: 3px; background: rgba(255,255,255,0.12);
+border-radius: 2px; overflow: hidden;
+}
+.loader-bar-fill {
+height: 100%; width: 0%;
+background: linear-gradient(90deg, var(–sky), var(–gold));
+border-radius: 2px; animation: loadBar 1.8s ease forwards;
+}
+@keyframes loadBar {
+0% { width: 0%; } 70% { width: 85%; } 100% { width: 100%; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- LOADER -->
+
+<div class="loader" id="loader">
+  <div class="loader-logo">Alpha <span>Milk</span>foods</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <p style="color:rgba(255,255,255,0.4);font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;">Loading Excellence</p>
+</div>
+
+<!-- ANNOUNCEMENT BAR -->
+
+<div class="announcement-bar">
+  🌍 Now exporting to <span>15+ Countries</span> globally &nbsp;·&nbsp; 🥛 6,00,000+ Litres/day capacity &nbsp;·&nbsp; 📞 <span>+91 72909 45999</span>
+</div>
+
+<!-- NAVBAR -->
+
+<header>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+          <span class="nav-logo-main">Alpha <span>Milk</span>foods</span>
+          <span class="nav-logo-sub">Farmer Fresh · Est. 2014</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#reach">Global Reach</a></li>
+        </ul>
+        <div class="nav-cta">
+          <div class="nav-phone">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            +91 72909 45999
+          </div>
+          <a href="#contact" class="btn-primary">Enquire Now →</a>
+        </div>
+        <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#industries">Industries</a>
+        <a href="#process">Our Process</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#reach">Global Reach</a>
+        <a href="#contact" class="btn-primary">Enquire Now →</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="hero">
+  <div class="hero-bg-pattern">
+    <div class="hero-orb"></div>
+    <div class="hero-orb"></div>
+    <div class="hero-orb"></div>
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge reveal">India's Integrated Dairy Leader</div>
+        <h1 class="hero-h1 reveal delay-1">
+          Far More Fresh.
+          <span class="line-sky">Far More Healthy.</span>
+          <span class="line-gold">Farm to World.</span>
+        </h1>
+        <p class="hero-subtitle reveal delay-2">
+          Alpha Milkfoods brings you pure, traceable dairy — sourced directly from 15,000+ farmers in the milk-rich belt of Uttar Pradesh, processed at world-class facilities, and delivered across India and 15+ countries worldwide.
+        </p>
+        <div class="hero-ctas reveal delay-3">
+          <a href="#contact" class="btn-gold">Get Bulk Enquiry →</a>
+          <a href="#products" class="btn-secondary" style="color:white;border-color:rgba(255,255,255,0.4);">Explore Products</a>
+        </div>
+        <div class="hero-stats-row reveal delay-4">
+          <div class="hero-stat">
+            <span class="hero-stat-num">6L+</span>
+            <span class="hero-stat-label">Litres/Day</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">15K+</span>
+            <span class="hero-stat-label">Farmer Network</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">30+</span>
+            <span class="hero-stat-label">Years Legacy</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">15+</span>
+            <span class="hero-stat-label">Countries</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal-right">
+        <div class="hero-image-frame">
+          <img 
+            src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&auto=format&fit=crop&q=85" 
+            alt="Farmer Fresh dairy products by Alpha Milkfoods"
+            loading="eager"
+          >
+          <div class="hero-image-badge">
+            <div class="hero-image-badge-icon">🥛</div>
+            <div class="hero-image-badge-text">
+              <strong>100% Pure &amp; Traceable</strong>
+              <span>Village-level collection since 2014</span>
+            </div>
+          </div>
+          <div class="hero-float-tag">FSSAI · ISO Certified</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+
+<div class="trust-bar" aria-hidden="true">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>FSSAI Certified</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>ISO 22000:2018</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>HACCP Compliant</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Halal Certified</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>BIS Certified</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Export Quality Assured</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>6,00,000 L/Day Capacity</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>15+ Export Markets</div>
+    <!-- Duplicate for seamless loop -->
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>FSSAI Certified</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>ISO 22000:2018</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>HACCP Compliant</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Halal Certified</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>BIS Certified</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Export Quality Assured</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>6,00,000 L/Day Capacity</div>
+    <div class="trust-item"><svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>15+ Export Markets</div>
+  </div>
+</div>
+
+<!-- STATS -->
+
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal delay-1">
+        <div class="stat-icon">🌾</div>
+        <div class="stat-num"><span class="counter" data-target="15000">0</span>+</div>
+        <div class="stat-label">Farmers in Network</div>
+      </div>
+      <div class="stat-card reveal delay-2">
+        <div class="stat-icon">🥛</div>
+        <div class="stat-num"><span class="counter" data-target="600000">0</span>+</div>
+        <div class="stat-label">Litres/Day Capacity</div>
+      </div>
+      <div class="stat-card reveal delay-3">
+        <div class="stat-icon">🏆</div>
+        <div class="stat-num"><span class="counter" data-target="30">0</span>+</div>
+        <div class="stat-label">Years of Legacy</div>
+      </div>
+      <div class="stat-card reveal delay-4">
+        <div class="stat-icon">🌍</div>
+        <div class="stat-num"><span class="counter" data-target="15">0</span>+</div>
+        <div class="stat-label">Countries Served</div>
+      </div>
+      <div class="stat-card reveal delay-5">
+        <div class="stat-icon">📦</div>
+        <div class="stat-num"><span class="counter" data-target="30">0</span>+</div>
+        <div class="stat-label">Product Varieties</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-img-wrap">
+          <img 
+            src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=700&auto=format&fit=crop&q=85" 
+            alt="Alpha Milkfoods processing plant — integrated dairy facility in Hathras, UP"
+            loading="lazy"
+          >
+          <div class="about-img-overlay"></div>
+        </div>
+        <div class="about-cert-badge">
+          <div class="about-cert-badge-icon">✓</div>
+          <div class="about-cert-badge-text">
+            <strong>ISO 22000:2018 Certified</strong>
+            <span>International food safety standard</span>
+          </div>
+        </div>
+        <div class="about-float-card">
+          <div class="big-num">600<span>K</span></div>
+          <p>Litres processed daily at our state-of-the-art Hathras plant</p>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <div class="section-tag">Our Story</div>
+        <h2 class="section-title">An Integrated Dairy <span>Built on Trust</span></h2>
+        <p class="section-subtitle">
+          Since 2014, Alpha Milkfoods has built a vertically integrated dairy business that connects every link in the value chain — from village-level milk collection to global distribution. What began as a commitment to Indian farmers has grown into one of the most trusted names in the industry.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">🌾</div>
+            <div class="about-feature-text">
+              <strong>Direct Farmer Procurement</strong>
+              <p>We collect raw milk directly from 15,000+ farmers across 500+ villages using state-of-the-art Milk Analyzers — ensuring freshness, fair pricing, and zero adulteration.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">🏭</div>
+            <div class="about-feature-text">
+              <strong>World-Class Processing Plant</strong>
+              <p>Our Hathras facility runs fully independent Cow and Buffalo milk lines with complete end-to-end traceability, ultra-modern processing, and rigorous in-house laboratory testing.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">📋</div>
+            <div class="about-feature-text">
+              <strong>Flawless Quality Management</strong>
+              <p>Every batch undergoes multi-stage testing across raw material intake, manufacturing, and finished goods — backed by FSSAI, ISO, HACCP, Halal, and BIS certifications.</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:32px;">
+          <a href="#contact" class="btn-primary">Partner With Us →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="products-header">
+      <div class="section-tag">Product Range</div>
+      <h2 class="section-title">30+ Varieties. <span>One Standard: Pure.</span></h2>
+      <p class="section-subtitle">
+        From bulk institutional supply to branded retail products, Alpha Milkfoods delivers dairy in every form — fresh, dried, cultured, and fermented — under the trusted Farmer Fresh brand.
+      </p>
+    </div>
+    <div class="product-tabs" role="tablist">
+      <button class="product-tab active" data-tab="all" role="tab" aria-selected="true">All Products</button>
+      <button class="product-tab" data-tab="institutional" role="tab">Institutional</button>
+      <button class="product-tab" data-tab="retail" role="tab">Retail / Domestic</button>
+      <button class="product-tab" data-tab="export" role="tab">Export Grade</button>
+    </div>
+    <div class="products-grid" id="productsGrid">
+
+```
+  <div class="product-card reveal delay-1" data-category="institutional export">
+    <div class="product-card-img">
+      <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=500&auto=format&fit=crop&q=80" alt="Skimmed Milk Powder — high protein dairy ingredient for food manufacturers" loading="lazy">
+      <span class="product-card-tag">Export</span>
+    </div>
+    <div class="product-card-body">
+      <div class="product-card-title">Skimmed Milk Powder</div>
+      <p class="product-card-desc">Produced through a spray-drying process from fresh pasteurised skim milk, our SMP delivers a high protein-to-fat ratio ideal for bakeries, confectioneries, and food manufacturers seeking consistent quality at scale.</p>
+      <div class="product-card-footer">
+        <div class="product-card-features">
+          <span class="product-tag">High Protein</span>
+          <span class="product-tag">Spray Dried</span>
+        </div>
+        <a href="#contact" class="product-enquire">Enquire <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card reveal delay-2" data-category="institutional export">
+    <div class="product-card-img">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&auto=format&fit=crop&q=80" alt="Pure Cow Ghee — A2 Desi Cow Milk Ghee by Farmer Fresh" loading="lazy">
+      <span class="product-card-tag">Bestseller</span>
+    </div>
+    <div class="product-card-body">
+      <div class="product-card-title">Pure Cow Ghee</div>
+      <p class="product-card-desc">Crafted from A2 Desi Cow milk using traditional bilona-inspired methods, our ghee carries a rich aroma and deep golden hue — sought after by sweet manufacturers, premium food brands, and health-conscious retail consumers alike.</p>
+      <div class="product-card-footer">
+        <div class="product-card-features">
+          <span class="product-tag">A2 Desi</span>
+          <span class="product-tag">Organic</span>
+        </div>
+        <a href="#contact" class="product-enquire">Enquire <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card reveal delay-3" data-category="retail">
+    <div class="product-card-img">
+      <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500&auto=format&fit=crop&q=80" alt="Toned Milk — Farmer Fresh packaged milk for retail consumers" loading="lazy">
+      <span class="product-card-tag">Retail</span>
+    </div>
+    <div class="product-card-body">
+      <div class="product-card-title">Toned &amp; Full Cream Milk</div>
+      <p class="product-card-desc">Our Farmer Fresh packaged milk undergoes double pasteurisation and homogenisation for guaranteed purity. Available as toned, double-toned, and full cream variants — each with complete nutritional traceability from farm to pack.</p>
+      <div class="product-card-footer">
+        <div class="product-card-features">
+          <span class="product-tag">Pasteurised</span>
+          <span class="product-tag">Traceable</span>
+        </div>
+        <a href="#contact" class="product-enquire">Enquire <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card reveal delay-1" data-category="retail institutional">
+    <div class="product-card-img">
+      <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&auto=format&fit=crop&q=80" alt="Tea Time Dairy Mix — Farmer Fresh dairy creamer for tea and coffee" loading="lazy">
+      <span class="product-card-tag">Popular</span>
+    </div>
+    <div class="product-card-body">
+      <div class="product-card-title">Tea &amp; Coffee Creamer</div>
+      <p class="product-card-desc">The Farmer Fresh Tea Time and Every Time creamers are engineered specifically for the Indian chai and coffee market — dissolving instantly, adding richness without overpowering the natural flavour profile of tea or coffee.</p>
+      <div class="product-card-footer">
+        <div class="product-card-features">
+          <span class="product-tag">Instant Dissolve</span>
+          <span class="product-tag">Bulk Available</span>
+        </div>
+        <a href="#contact" class="product-enquire">Enquire <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card reveal delay-2" data-category="institutional export">
+    <div class="product-card-img">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop&q=80" alt="Fontana SMP Gold — premium skimmed milk powder for bakery and confectionery" loading="lazy">
+      <span class="product-card-tag">Institutional</span>
+    </div>
+    <div class="product-card-body">
+      <div class="product-card-title">Dairy Creamer (EveryTime)</div>
+      <p class="product-card-desc">A versatile institutional-grade dairy creamer formulated to perform consistently in high-temperature beverage applications. Trusted by tea-premix manufacturers, QSR chains, and vending operators across India for its stability and yield.</p>
+      <div class="product-card-footer">
+        <div class="product-card-features">
+          <span class="product-tag">B2B Bulk</span>
+          <span class="product-tag">Stable</span>
+        </div>
+        <a href="#contact" class="product-enquire">Enquire <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card reveal delay-3" data-category="retail">
+    <div class="product-card-img">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&auto=format&fit=crop&q=80" alt="Gulab Jamun Mix — Farmer Fresh ready-to-cook Indian sweet mix" loading="lazy">
+      <span class="product-card-tag">Ready-to-Cook</span>
+    </div>
+    <div class="product-card-body">
+      <div class="product-card-title">Gulab Jamun &amp; Sweet Mixes</div>
+      <p class="product-card-desc">Our Farmer Fresh ready-to-cook mixes bring the richness of traditional Indian mithai to the modern kitchen. Developed with dairy nutritionists, these mixes are fortified with SMP to guarantee a consistent melt-in-the-mouth texture every time.</p>
+      <div class="product-card-footer">
+        <div class="product-card-features">
+          <span class="product-tag">Ready-to-Cook</span>
+          <span class="product-tag">Consistent</span>
+        </div>
+        <a href="#contact" class="product-enquire">Enquire <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div style="text-align:center;margin-top:48px;" class="reveal">
+  <a href="#contact" class="btn-primary">Request Full Product Catalogue →</a>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- FARMER FRESH BRAND SPOTLIGHT -->
+
+<section class="brand-section" id="brand">
+  <div class="container">
+    <div class="brand-inner">
+      <div class="brand-content reveal-left">
+        <div class="section-tag">Consumer Brand</div>
+        <h2 class="brand-tagline">The Family's <em>Most Trusted</em> Dairy Brand</h2>
+        <p class="brand-desc">
+          Farmer Fresh is Alpha Milkfoods' consumer-facing brand — a name that Indian households associate with purity, nutrition, and the freshness of farm-sourced dairy. Every product under the Farmer Fresh label carries the same uncompromising quality that powers our institutional and export business.
+        </p>
+        <div class="brand-product-pills">
+          <div class="brand-pill"><span class="brand-pill-dot"></span>Toned Milk</div>
+          <div class="brand-pill"><span class="brand-pill-dot"></span>Skimmed Milk Powder</div>
+          <div class="brand-pill"><span class="brand-pill-dot"></span>Pure Ghee</div>
+          <div class="brand-pill"><span class="brand-pill-dot"></span>Tea Time Mix</div>
+          <div class="brand-pill"><span class="brand-pill-dot"></span>Every Time Creamer</div>
+          <div class="brand-pill"><span class="brand-pill-dot"></span>Gulab Jamun Mix</div>
+          <div class="brand-pill"><span class="brand-pill-dot"></span>Fontana SMP</div>
+          <div class="brand-pill"><span class="brand-pill-dot"></span>Organic Ghee</div>
+        </div>
+        <a href="#contact" class="btn-primary">Become a Distributor →</a>
+      </div>
+      <div class="brand-visual reveal-right">
+        <div class="brand-img-container">
+          <div class="brand-img-main">
+            <img 
+              src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=600&auto=format&fit=crop&q=85" 
+              alt="Farmer Fresh — Alpha Milkfoods consumer dairy brand product range"
+              loading="lazy"
+            >
+          </div>
+          <div class="brand-promo-card">
+            <div class="icon">🌿</div>
+            <strong>100% Natural</strong>
+            <span>No artificial preservatives. No adulteration. Ever.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+
+<section class="industries-section" id="industries">
+  <div class="container">
+    <div class="industries-header reveal">
+      <div class="section-tag">Industries We Serve</div>
+      <h2 class="section-title">Powering India's <span>Food Industry</span></h2>
+      <p class="section-subtitle">Our dairy ingredients form the backbone of products consumed daily across the food and beverage landscape — from your morning cup of tea to premium confectioneries.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&auto=format&fit=crop&q=80" alt="Dairy Creamer for Bakery and Confectionery" loading="lazy">
+        <div class="industry-overlay"></div>
+        <div class="industry-content">
+          <div class="industry-icon">🥐</div>
+          <div class="industry-name">Bakery &amp; Confectionery</div>
+          <div class="industry-desc">SMP, ghee and dairy fats for consistent baking results</div>
+        </div>
+      </div>
+      <div class="industry-card reveal delay-2">
+        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400&auto=format&fit=crop&q=80" alt="Dairy ingredients for Ice Cream manufacturing" loading="lazy">
+        <div class="industry-overlay"></div>
+        <div class="industry-content">
+          <div class="industry-icon">🍦</div>
+          <div class="industry-name">Ice Cream &amp; Frozen</div>
+          <div class="industry-desc">High-fat dairy bases for premium frozen desserts</div>
+        </div>
+      </div>
+      <div class="industry-card reveal delay-3">
+        <img src="https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400&auto=format&fit=crop&q=80" alt="Tea and Coffee Premix dairy creamer supply" loading="lazy">
+        <div class="industry-overlay"></div>
+        <div class="industry-content">
+          <div class="industry-icon">☕</div>
+          <div class="industry-name">Tea &amp; Coffee Premix</div>
+          <div class="industry-desc">Stable, instant-dissolving creamers for vending &amp; QSR</div>
+        </div>
+      </div>
+      <div class="industry-card reveal delay-4">
+        <img src="https://images.unsplash.com/photo-1606914469633-bd54bf9c7b8c?w=400&auto=format&fit=crop&q=80" alt="Dairy for Indian Sweets and Namkeen industry" loading="lazy">
+        <div class="industry-overlay"></div>
+        <div class="industry-content">
+          <div class="industry-icon">🍬</div>
+          <div class="industry-name">Sweets &amp; Namkeen</div>
+          <div class="industry-desc">Pure ghee and SMP for authentic Indian mithais</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+
+<section class="process-section" id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <div class="section-tag" style="margin:0 auto 16px;">Farm to Fork</div>
+      <h2 class="section-title" style="text-align:center;">How We Deliver <span>Guaranteed Purity</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;text-align:center;">A fully traceable, integrated supply chain from the moment milk leaves the farmer's hand to the moment it reaches your facility or home.</p>
+    </div>
+    <div class="process-timeline">
+      <div class="process-step reveal delay-1">
+        <div class="process-step-num">🌾</div>
+        <div class="process-step-title">Farmer Collection</div>
+        <p class="process-step-desc">Milk collected directly from 15,000+ farmers across 500+ villages using Milk Analyzers</p>
+      </div>
+      <div class="process-step reveal delay-2">
+        <div class="process-step-num">❄️</div>
+        <div class="process-step-title">Bulk Milk Cooling</div>
+        <p class="process-step-desc">4 chilling centres maintain optimal temperature to preserve freshness and prevent spoilage</p>
+      </div>
+      <div class="process-step reveal delay-3">
+        <div class="process-step-num">🏭</div>
+        <div class="process-step-title">Processing &amp; Testing</div>
+        <p class="process-step-desc">State-of-the-art plant with in-house labs testing raw material, process and finished goods</p>
+      </div>
+      <div class="process-step reveal delay-4">
+        <div class="process-step-num">📦</div>
+        <div class="process-step-title">Packing</div>
+        <p class="process-step-desc">Hygienic, tamper-proof packaging across both Cow and Buffalo milk lines with full traceability</p>
+      </div>
+      <div class="process-step reveal delay-5">
+        <div class="process-step-num">🚚</div>
+        <div class="process-step-title">Distribution</div>
+        <p class="process-step-desc">Pan-India cold chain network and international freight for export markets across 15+ countries</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section class="certs-section" id="certifications">
+  <div class="container">
+    <div class="certs-inner">
+      <div class="certs-content reveal-left">
+        <div class="section-tag">Quality &amp; Compliance</div>
+        <h2 class="section-title">Certified to the <span>Highest Standards</span></h2>
+        <p class="section-subtitle">
+          Every product that leaves our plant carries the assurance of internationally recognised certifications. Our quality management system is not a formality — it is the foundation of our business.
+        </p>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">🏛️</div>
+            <div class="cert-name">FSSAI</div>
+            <div class="cert-desc">Food Safety & Standards Authority of India</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🌐</div>
+            <div class="cert-name">ISO 22000</div>
+            <div class="cert-desc">Food Safety Management System 2018</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">⚠️</div>
+            <div class="cert-name">HACCP</div>
+            <div class="cert-desc">Hazard Analysis Critical Control Points</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">☪️</div>
+            <div class="cert-name">Halal</div>
+            <div class="cert-desc">Certified for Muslim consumer markets globally</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🔖</div>
+            <div class="cert-name">BIS</div>
+            <div class="cert-desc">Bureau of Indian Standards certification</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🌿</div>
+            <div class="cert-name">Organic</div>
+            <div class="cert-desc">Certified organic range available on request</div>
+          </div>
+        </div>
+      </div>
+      <div class="certs-visual reveal-right">
+        <div class="certs-img-wrap">
+          <img 
+            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&auto=format&fit=crop&q=85" 
+            alt="Alpha Milkfoods ISO-certified quality control laboratory in Hathras"
+            loading="lazy"
+          >
+        </div>
+        <div class="certs-quality-badge">
+          <div class="big">A+</div>
+          <p>Quality Grade</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL REACH -->
+
+<section class="reach-section" id="reach">
+  <div class="container">
+    <div class="reach-inner">
+      <div class="reach-content reveal-left">
+        <div class="section-tag">Global Exports</div>
+        <h2 class="section-title">Indian Dairy. <span>World Trusted.</span></h2>
+        <p class="section-subtitle">
+          From the milk-rich plains of Uttar Pradesh, our products reach kitchens, factories, and food businesses across continents. Our export-certified dairy meets the regulatory standards of every market we enter.
+        </p>
+        <div class="reach-countries">
+          <div class="country-pill"><span class="country-flag">🇦🇪</span>UAE</div>
+          <div class="country-pill"><span class="country-flag">🇸🇦</span>Saudi Arabia</div>
+          <div class="country-pill"><span class="country-flag">🇶🇦</span>Qatar</div>
+          <div class="country-pill"><span class="country-flag">🇰🇼</span>Kuwait</div>
+          <div class="country-pill"><span class="country-flag">🇴🇲</span>Oman</div>
+          <div class="country-pill"><span class="country-flag">🇧🇭</span>Bahrain</div>
+          <div class="country-pill"><span class="country-flag">🇳🇬</span>Nigeria</div>
+          <div class="country-pill"><span class="country-flag">🇰🇪</span>Kenya</div>
+          <div class="country-pill"><span class="country-flag">🇲🇾</span>Malaysia</div>
+          <div class="country-pill"><span class="country-flag">🇸🇬</span>Singapore</div>
+          <div class="country-pill"><span class="country-flag">🇬🇧</span>UK</div>
+          <div class="country-pill"><span class="country-flag">🌍</span>+4 More</div>
+        </div>
+        <div style="margin-top:36px;">
+          <a href="#contact" class="btn-gold">Enquire for Export →</a>
+        </div>
+      </div>
+      <div class="reach-map-visual reveal-right">
+        <div class="reach-globe">
+          🌏
+          <div class="reach-globe-dot"></div>
+          <div class="reach-globe-dot"></div>
+          <div class="reach-globe-dot"></div>
+          <div class="reach-globe-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info reveal-left">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">Let's Build a <span>Dairy Partnership</span></h2>
+        <p class="section-subtitle">
+          Whether you are sourcing bulk dairy ingredients, exploring export partnerships, or looking for retail distribution — our team responds within 24 hours.
+        </p>
+        <div class="contact-info-items">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+              <strong>Corporate Office</strong>
+              <p>M8-M11, Hemkunt Chambers, Nehru Place, New Delhi — 110019</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🏭</div>
+            <div class="contact-info-text">
+              <strong>Manufacturing Plant</strong>
+              <p>Salempur Road, Rati ka Nagla, Sikandra Rao, Hathras, UP — 204101</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div class="contact-info-text">
+              <strong>Direct Line</strong>
+              <a href="tel:+917290945999">+91 72909 45999</a>
+              <p style="margin-top:2px;">Mon–Sat, 9 AM – 6 PM IST</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📧</div>
+            <div class="contact-info-text">
+              <strong>Email</strong>
+              <a href="mailto:info@alphamilk.in">info@alphamilk.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal-right">
+        <div class="form-title">Request a Quote</div>
+        <p class="form-subtitle">Fill in your requirements and our team will respond with pricing and product specs within 24 hours.</p>
+        <form id="enquiryForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Rajesh" autocomplete="given-name">
+              <span class="form-error-msg" id="fnameErr">Please enter your first name.</span>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Sharma" autocomplete="family-name">
+              <span class="form-error-msg" id="lnameErr">Please enter your last name.</span>
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" placeholder="ABC Foods Pvt. Ltd." autocomplete="organization">
+              <span class="form-error-msg" id="companyErr">Please enter your company name.</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+              <span class="form-error-msg" id="phoneErr">Please enter a valid phone number.</span>
+            </div>
+            <div class="form-group full">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="rajesh@abcfoods.com" autocomplete="email">
+              <span class="form-error-msg" id="emailErr">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group full">
+              <label for="product">Product Interest *</label>
+              <select id="product" name="product">
+                <option value="">— Select a product category —</option>
+                <option>Skimmed Milk Powder (SMP)</option>
+                <option>Whole Milk Powder (WMP)</option>
+                <option>Pure Cow Ghee / Organic Ghee</option>
+                <option>Tea Coffee Creamer</option>
+                <option>Dairy Creamer (EveryTime / Tea Time)</option>
+                <option>Toned / Full Cream Milk</option>
+                <option>Institutional Bulk Supply</option>
+                <option>Export Enquiry</option>
+                <option>Retail / Distribution Partnership</option>
+                <option>Other</option>
+              </select>
+              <span class="form-error-msg" id="productErr">Please select a product category.</span>
+            </div>
+            <div class="form-group full">
+              <label for="message">Requirements / Message</label>
+              <textarea id="message" name="message" placeholder="Please describe your quantity requirements, frequency, delivery location, and any specific quality parameters…"></textarea>
+            </div>
+            <div class="form-submit-wrap">
+              <button type="submit" class="form-submit-btn" id="submitBtn">
+                Send Enquiry →
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <h3>✓ Enquiry Received!</h3>
+          <p>Thank you for reaching out to Alpha Milkfoods. Our team will contact you within 24 hours with pricing and product specifications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Alpha <span>Milk</span>foods</div>
+        <div class="footer-tagline">Farmer Fresh · Est. 2014 · Hathras, UP</div>
+        <p class="footer-brand-desc">India's integrated dairy leader. From 15,000+ farmer families to food businesses and consumers across 15+ countries — delivering purity, quality, and trust in every drop.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/FarmerFreshBuzz/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Facebook">📘</a>
+          <a href="https://in.linkedin.com/company/alpha-milkfoods" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">💼</a>
+          <a href="https://www.instagram.com/farmerfreshbuzz/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">📸</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#process">Our Plant</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Corporate Team</a></li>
+          <li><a href="#contact">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#products">Skimmed Milk Powder</a></li>
+          <li><a href="#products">Pure Cow Ghee</a></li>
+          <li><a href="#products">Tea Time Creamer</a></li>
+          <li><a href="#products">Toned Milk</a></li>
+          <li><a href="#products">Institutional Range</a></li>
+          <li><a href="#products">Export Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+917290945999">+91 72909 45999</a></li>
+          <li><a href="mailto:info@alphamilk.in">info@alphamilk.in</a></li>
+          <li><a href="#contact">Enquiry Form</a></li>
+          <li><a href="#reach">Export Enquiry</a></li>
+          <li><a href="#contact">Distributor Programme</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span id="footerYear">2024</span> Alpha Milkfoods Pvt. Ltd. All rights reserved. GST: 09AAGCA6670H1ZG</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FAB -->
+
+<a class="wa-fab" href="https://wa.me/917290945999?text=Hello%20Alpha%20Milkfoods%2C%20I%27d%20like%20to%20enquire%20about%20your%20dairy%20products." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="wa-fab-tooltip">Chat on WhatsApp</span>
+</a>
+
+<!-- SCROLL TOP -->
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg width="18" height="18" fill="none" stroke="#0D2B5E" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+/* ============================================================
+   LOADER
+============================================================ */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hide');
+  }, 1900);
+});
+
+/* ============================================================
+   NAVBAR SCROLL
+============================================================ */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+/* ============================================================
+   MOBILE MENU
+============================================================ */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+
+/* ============================================================
+   SCROLL ANIMATIONS (IntersectionObserver)
+============================================================ */
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+revealEls.forEach(el => observer.observe(el));
+
+/* ============================================================
+   COUNTER ANIMATION
+============================================================ */
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target, 10);
+  const duration = 1800;
+  const start = performance.now();
+  const format = (n) => {
+    if (target >= 100000) return (n/1000).toFixed(0) + 'K';
+    if (target >= 1000) return n.toLocaleString('en-IN');
+    return n;
+  };
+  const step = (now) => {
+    const progress = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    el.textContent = format(Math.floor(ease * target));
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = format(target);
+  };
+  requestAnimationFrame(step);
+}
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+/* ============================================================
+   PRODUCT TABS
+============================================================ */
+const tabs = document.querySelectorAll('.product-tab');
+const cards = document.querySelectorAll('.product-card');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+    tab.classList.add('active'); tab.setAttribute('aria-selected','true');
+    const filter = tab.dataset.tab;
+    cards.forEach(card => {
+      const cat = card.dataset.category || '';
+      if (filter === 'all' || cat.includes(filter)) {
+        card.style.display = '';
+        card.style.animation = 'fadeInCard 0.4s ease forwards';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+/* ============================================================
+   FORM VALIDATION
+============================================================ */
+const form = document.getElementById('enquiryForm');
+const submitBtn = document.getElementById('submitBtn');
+const formSuccess = document.getElementById('formSuccess');
+
+function validateEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+function validatePhone(v) { return /^[\+\d\s\-\(\)]{7,15}$/.test(v); }
+
+function showError(fieldId, errId, show) {
+  const field = document.getElementById(fieldId);
+  const err = document.getElementById(errId);
+  if (show) { field.classList.add('error'); err.classList.add('visible'); }
+  else { field.classList.remove('error'); err.classList.remove('visible'); }
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let valid = true;
+
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  const company = document.getElementById('company').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const product = document.getElementById('product').value;
+
+  showError('fname','fnameErr', !fname); if (!fname) valid = false;
+  showError('lname','lnameErr', !lname); if (!lname) valid = false;
+  showError('company','companyErr', !company); if (!company) valid = false;
+  showError('phone','phoneErr', !validatePhone(phone)); if (!validatePhone(phone)) valid = false;
+  showError('email','emailErr', !validateEmail(email)); if (!validateEmail(email)) valid = false;
+  showError('product','productErr', !product); if (!product) valid = false;
+
+  if (!valid) return;
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+
+  // Simulate submission (demo)
+  setTimeout(() => {
+    form.style.display = 'none';
+    formSuccess.classList.add('visible');
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Enquiry →';
+  }, 1200);
+});
+
+// Realtime error clearing
+['fname','lname','company','phone','email','product'].forEach(id => {
+  document.getElementById(id).addEventListener('input', () => {
+    document.getElementById(id).classList.remove('error');
+    const errId = id + 'Err';
+    if (document.getElementById(errId)) document.getElementById(errId).classList.remove('visible');
+  });
+});
+
+/* ============================================================
+   SCROLL TO TOP
+============================================================ */
+document.getElementById('scrollTop').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ============================================================
+   FOOTER YEAR
+============================================================ */
+document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+/* ============================================================
+   CSS: CARD FADEIN
+============================================================ */
+const style = document.createElement('style');
+style.textContent = `@keyframes fadeInCard { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }`;
+document.head.appendChild(style);
+</script>
+
+</body>
+</html>
